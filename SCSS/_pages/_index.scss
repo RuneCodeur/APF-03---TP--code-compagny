@@ -1,0 +1,186 @@
+header{
+    background-color: $colorPrimary;
+        padding: 15px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            height: 60px;
+            min-width: 60px;
+            border-radius: 50%;
+            border: 2px lighten($color: $colorPrimary, $amount: 10) solid;
+            background-color: lighten($color: $colorPrimary, $amount: 5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 30px;
+            }
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin: auto 0;
+                display: flex;
+                height: 100%;
+                a{
+                    border-radius: 5px;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 40px;
+                    padding: 0 20px;
+                    margin: 15px;
+                    color: white;
+                    transition-duration: 200ms;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: rgba(255, 255, 255, 0.7);
+                        background-color: rgba(255,255,255,0.1)
+                    }
+                }
+            }
+        }
+    }
+}
+
+#slider{
+    background-color: rgba( lighten($color: $colorPrimary, $amount: 15%) , 0.8);
+    overflow: hidden;
+    position: relative;
+    .container{
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        h2{
+            font-size: 25px;
+            padding-bottom: 22px;
+            border-bottom: 1px white solid;
+            margin: 0 auto;
+        }
+        p{
+            width: 50%;
+            margin: 30px auto;
+            font-size: 15px;
+        }
+        .button-show{
+            background-color:rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+#team{
+    text-align: center;
+    color: $colorPrimary;
+    h2{
+        margin-top: 75px;
+        font-size: 36px;
+    }
+    .description{
+        margin: 0 auto;
+        max-width: 50%;
+
+        p{
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+#portfolio{
+    background-color: $colorSecundary;
+    color: white;
+    padding-bottom: 60px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin-top: 55px;
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+}
+
+#contact{
+    background-color: $colorTertiary;
+    color: white;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        margin-top: 55px;
+    }
+    form{
+        margin: 40px 0;
+        width: 40%;
+        fieldset{
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input, textarea{
+                padding: 10px;
+                border: 3px white solid;
+                margin: 5px;
+                width: 100%;
+                border-radius: 25px;
+                text-align: center;
+                display: flex;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                &:focus{
+                    border: 10px solid $colorSecundary;
+                }
+            }
+            .button-show{
+                width: 200px;
+            }
+        }
+    }
+}
+footer{
+    background-color: $colorTertiary;
+    color: white;
+    .container{
+        height: 140px;
+        border-top: 1px white solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div{
+            display: flex;
+            align-items: center;
+            ul{
+                margin-left: 25px;
+                display: flex;
+                list-style-type: none;
+                
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px){
+
+
+    .container{
+        width: 95%;
+    }
+}
